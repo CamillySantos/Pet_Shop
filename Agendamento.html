@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="./src/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/Reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Pets Place - Agendamento</title>
+</head>
+<body>
+    
+    <nav id="menu">
+
+        <a href="Home_Page.html">
+            <img src="./src/android-chrome-192x192.png" alt="Pets Place" width="60px" id="logo">
+        </a>
+         
+      <div>
+        <ul id="links">
+            <button type="submit" name="botao" value="inicio" class="item1"><a href="Home_Page.html" class="menu">Início</a></button>
+            <button type="submit" name="botao" value="sobrenos" class="item1"><a href="#boxdosobrenos" class="menu">Sobre Nós</a></button>
+            <button type="submit" name="botao" value="shopping" class="item1"><a href="Shop.html" class="menu">Shopping</a></button>
+            <button type="submit" name="botao" value="adocao" class="item1"><a href="Adoçao.html" class="menu">Adoção</a></button>
+            <button type="submit" name="botao" value="agendamento" class="item1"><a href="Agendamento.html" class="menu">Agendamento</a></button>
+            <button type="submit" name="botao" value="contato" class="item1"><a href="Contato.html" class="menu">Contato</a></button>
+        </ul>
+      </div>
+
+    </nav>
+    
+    <header class="headers">
+        <div class="header" class="destaque2">
+        <h1 id="titulo" class="destaque2">Agendamento<br><span id="informacao" class="destaque2">Nesta área você agendará um horario e um serviço com a gente. APROVEITE.</span></h1>
+        </div>
+    </header>
+
+    <main id="agendamento">
+
+        <div class="identificacao">
+            <h2 id="secao" class="identificacao">ATENÇÃO</h2>                
+            <p id="explicacao" >Por favor preencha todos os campos com o máximo de atenção.<br><br>TODA EQUIPE AGRADECE!</p>
+            </div>
+
+        <form action="Agendamento" class="formulario">
+
+            <div class="espaco">
+
+                <h2 class="bonitinho">Hora de preecher</h2>
+
+            <label for="nome" class="informar">Nome:</label><br>
+            <input type="text" id="noedoform" name="nome" placeholder="Digite seu nome" class="texto"><br><br>
+
+            <label for="email" class="informar">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" class="texto"><br><br>
+    
+            <label for="fone" class="informar">Telefone:</label><br>
+            <input type="number" id="fone" name="fone" placeholder="Digite seu telefone" class="texto"><br><br>
+
+            <label for="data" class="informar">Selecione sua data de nascimento:</label><br>
+            <input type="date" class="texto"><br><br>
+
+            <label for="CPF" class="informar">CPF:</label><br>
+            <input type="number" id="CPF" name="CPF" placeholder="digite o seu CPF" minlength="11" maxlength="11" class="texto"><br><br>
+
+            <label for="nome" class="informar">Qual o nome do seu Pet:</label><br>
+            <input type="text" id="noedopet" name="nome" placeholder="Digite o nome" class="texto"><br><br>
+    
+            <label for="radio" class="informar">Seu pet é um cachorro ou um gato?</label><br><br>
+    
+            <div class="bolinha">
+            <input type="radio" id="radio1" name="resposta" value="cachorro">
+            <label for="radio1" class="radio">Cachorro</label>
+            </div>
+    
+            <div class="bolinha">
+            <input type="radio" id="radio" name="resposta" value="gato">
+            <label for="radio" class="radio">Gato</label>
+            </div>
+            <br><br>
+    
+            <label for="servico" class="informar">Selecione o tipo de serviço</label><br>
+    
+            <select name="servico" id="servico" class="texto">
+                <option value="selecione">-</option>
+                <option value="banho-e-tosa">Banho & Tosa</option>
+                <option value="servicos-veterinarios">Serviços veterinários</option>
+                <option value="exames-de-labiratorio">Exames de laboratório</option>
+                <option value="taxi-dog">Táxi dog</option>
+                <option value="hospedagem">Hospedagem</option>
+                <option value="delivery">Delivery</option>
+                <option value="spa">Spa</option>
+            </select><br><br>
+
+            <label for="radio" class="informar">Seu pet tem alguma alergia ou problema de saúde?</label><br><br>
+    
+            <div class="bolinha">
+            <input type="radio" id="radios" name="resposta" value="SIM">
+            <label for="radios" class="radio">Sim</label>
+            </div>
+
+            <div class="bolinha">
+            <input type="radio" id="radion" name="resposta" value="NÃO">
+            <label for="radion" class="radio">Não</label>
+            </div>
+            <br><br>
+            
+            <label for="alergia" class="informar">Se sim, qual?</label><br>
+            <input type="text" id="alergia" name="alergia" placeholder="Digite aqui" class="texto"><br><br>
+            
+            <label for="datatime" class="informar">Selecione o dia e o horário que deseja agendar:</label><br>
+            <input type="datetime-local" class="texto"><br><br>
+
+            <button type="submit" name="botao" value="concluir" class="botao"><a href="Conclusao.html" class="botao">Concluir</a></button>
+            </div>
+        </form>
+    </main>
+
+    <footer> 
+       
+        <p class="footer">Nós siga nas redes</p>
+
+        <div class="redes">
+        <img src="./src/facebook.png" class="icone">
+        <img src="./src/gmail.png" class="icone">
+        <img src="./src/instagram.png" class="icone">
+        <img src="./src/linkedin.png" class="icone">
+        <img src="./src/twitter.png" class="icone">
+        <img src="./src/whatsapp.png" class="icone">
+        </div>
+       <p class="footer">&copy; 2023 PetShop Pets Place. Todos os direitos reservados.</p>
+       
+    </footer>
+</body>
+</html>
