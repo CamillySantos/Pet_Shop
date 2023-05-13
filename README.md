@@ -5,6 +5,10 @@ Não se preocupe com estética nesse momento.
 Nós vamos chegar lá.
 #
 
+## Um pequeno vídeo do projeto
+
+https://github.com/CamillySantos/Pet_Shop/assets/105953740/fddcf29b-afda-4f82-aec9-51ef2839c750
+
 ##  Qual o conteúdo?
 
 0. Todas as página devem ser navegáveis entre si. Então, crie um menu com as opções HOME, 
